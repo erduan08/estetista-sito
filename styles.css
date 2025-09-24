@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #4B3B36;
+    background-color: #F8F4F1;
+}
+
+
+/* header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3E7E3;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    /* 20px di spazio tra ogni elemento */
+}
+
+a {
+    text-decoration: none;
+    color: #4B3B36;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 500px;
+    background-image: url('foto/decorazione.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 90px;
+}
+
+.hero-titolo {
+    gap: 8px;
+    color: #CFA9A0;
+    padding-top: 170px;
+    font-size: 25px;
+}
+
+.hero-titolo #regolar {
+    font-weight: lighter;
+}
+
+.hero-titolo h1 {
+    font-weight: bold;
+}
+
+.hero-sottotitolo {
+    padding-bottom: 30px;
+}
+
+.hero-titolo,
+.hero-sottotitolo,
+.button-servizzi,
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* bottone */
+
+.button {
+    width: 144px;
+    height: 40px;
+    background-color: #CFA9A0;
+    border-radius: 20px;
+    align-items: center;
+    color: #F8F4F1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+/* bottone se ci passi il mouse sopra */
+
+.button:hover {
+    background-color: #B37C73;
+    color: #4B3B36;
+}
+
+/* Chi Sono */
+
+.chiSono {
+    display: flex;
+    padding: 200px 5%;
+    gap: 40px;
+}
+
+/* divido in 2 colonne */
+
+.testo {
+    width: 40%;
+    color: #4B3B36;
+}
+
+.immagine {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+/* centro la parte di testo rispetto alla foto */
+.testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* titolo e linea  */
+
+
+.titoloLinea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.titoloLinea img {
+    height: 2px;
+    width: 115px;
+}
+
+/* frase in corsivo */
+
+.fraseCorsivo {
+    font-family: 'Caveat';
+    color: #CFA9A0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* servizi */
+
+.titolo-contatti,
+.titolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titolo-contatti h2,
+.titolo-gallery h2,
+.titoloLinea h2,
+.titolo h2 {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+
+.servizzi .titolo img {
+    height: 2px;
+    width: 250px;
+}
+
+.titolo-contatti p,
+.titolo p {
+    color: #B37C73;
+    width: 500px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* scheda 1 2 3 4*/
+#scheda4,
+#scheda3,
+#scheda2,
+#scheda1 {
+    height: 350px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 200px 0px;
+
+}
+
+#scheda4 img,
+#scheda3 img,
+#scheda2 img,
+#scheda1 img {
+    width: auto;
+    height: 99px;
+    border-radius: 10px;
+}
+
+#scheda4 p,
+#scheda3 p,
+#scheda2 p,
+#scheda1 p {
+    padding: 0 30px;
+    text-align: center;
+    color: #4B3B36;
+}
+
+
+.button-servizzi {
+    margin-top: 50px;
+}
+
+.album,
+#trattamenti,
+#schede {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* bottone cambiare schede*/
+
+.nascosto {
+    display: none !important;
+}
+
+.visibile {
+    display: block;
+}
+
+.button-indietro2,
+.button-avanti2,
+.button-indietro1,
+.button-avanti1 {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* galleria qui fai ho fatto solo html dove dovrai sistemar al lunghezza della linea poi fare la cosa simile alla osa delle schede che poi spostare destra e sinstra*/
+
+
+.titolo-gallery {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.titolo-gallery img {
+    height: 2px;
+    width: 90px;
+}
+
+.album {
+    margin: 200px 0 200px 0;
+}
+
+.album-immagini {
+    display: flex;
+    gap: 20px;
+    background: none;
+}
+
+#immagine4 img,
+#immagine3 img,
+#immagine2 img,
+#immagine1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/*contatti*/
+
+.titolo-contatti img {
+    height: 2px;
+    width: 350px;
+}
+
+.whatInsta {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.Instagram,
+.WhatsApp {
+    display: inline-flex;
+    background-color: #CFA9A0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#contatti>p {
+    /* qui metti le proprietà solo per il secondo <p> */
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/*footer*/
+footer {
+    background-color: #F3E7E3;
+}
+
+.titolo-footer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: #CFA9A0;
+    padding-top: 30px;
+}
+
+.titolo-footer>h5:nth-of-type(2) {
+    font-weight: normal;
+}
+
+.menu:last-child {
+    font-size: 12px;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.immaggini {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.credits,
+.copyriting {
+    display: flex;
+    justify-content: center;
+    color: #7E6D68;
+}
+
+.copyriting {
+    font-size: 12px;
+}
+
+.credits {
+    font-size: 10px;
+    margin: 5px 0;
+    padding-bottom: 30px;
+}
